@@ -1,0 +1,7 @@
+.card-image{
+    cursor: pointer;
+}
+
+.card-image:hover {
+    border: 1px solid #333333;
+}

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4 p-4" *ngFor="let image of images">
+    <div class="card card-image" (click)='cardSelected(image._id)'>
+      <div class="card-header">
+        {{image.title}}
+      </div>
+      <img [src]="'http://localhost:3000/' + image.imagePath" alt="image" class="img-card-top w-100">
+      <div class="card-body">
+        {{image.description}}
+      </div>
+    </div>
+  </div>
+</div>
