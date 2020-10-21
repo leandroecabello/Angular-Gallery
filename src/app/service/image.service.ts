@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
 import { Image } from '../interfaces/Image';
+import { Global } from './Global';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class ImageService {
   public url: string ;
 
   constructor(private http: HttpClient) {
-      this.url = environment.GlobalUrl;
+      this.url = Global.url;
   }
 
   createImage( title: string, description: string, image: File) {

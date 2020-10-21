@@ -2,7 +2,7 @@
   <div class="col-md-4 p-4" *ngFor="let image of images">
     <div class="card card-image" (click)='cardSelected(image._id)'>
       <img [src]="'http://localhost:3000/' + image.imagePath" alt="image" class="img-card-top rounded w-100">
-      <div class="card-text mx-auto">
+      <div class="card-text">
         <h3>{{image.title}}</h3>
         <p>{{image.description}}</p>
       </div>
