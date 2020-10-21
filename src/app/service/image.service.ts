@@ -19,6 +19,7 @@ export class ImageService {
     fd.append('title', title);
     fd.append('description', description);
     fd.append('image', image);
+    console.log(image);
     return this.http.post(`${this.url}/createPhoto`, fd);
   }
 

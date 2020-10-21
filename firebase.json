@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angular-image-gallery",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
